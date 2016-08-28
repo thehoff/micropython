@@ -41,6 +41,7 @@ def setup():
         f.write("""\
 # This file is executed on every boot (including wake-boot from deepsleep)
 import os, esp, network, socket, gc, webrepl
+import urllib
 webrepl.start()
 gc.collect()
 sta_if = network.WLAN(network.STA_IF)
