@@ -43,52 +43,11 @@ def setup():
 import os, esp, network, socket, gc, webrepl
 webrepl.start()
 gc.collect()
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
-print "boo"
+sta_if = network.WLAN(network.STA_IF)
+ap_if = network.WLAN(network.AP_IF)
+print('connecting to network...')
+sta_if.active(True)
+sta_if.connect('SlicedTech', 'WeNeedTheInternet!')
+print('OMG OMG')
 """)
     return vfs
