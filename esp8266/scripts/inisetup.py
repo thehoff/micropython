@@ -40,7 +40,7 @@ def setup():
     with open("/boot.py", "w") as f:
         f.write("""\
 # This file is executed on every boot (including wake-boot from deepsleep)
-import os, esp, network, socket, gc, webrepl
+import machine, esp, os, time, network, socket, gc, webrepl
 import urllib
 webrepl.start()
 gc.collect()
